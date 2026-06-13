@@ -1294,7 +1294,7 @@ export default function TimecardDashboard({ today = new Date() }) {
             <div className="w-9 h-9 rounded-xl flex items-center justify-center text-white text-lg"
               style={{ background: "#0F6E56" }}>⏱</div>
             <div>
-              <div className={`text-base font-semibold ${tm.text}`}>Bisviews Timecard</div>
+              <div className={`text-base font-semibold text-xl ${tm.text}`}>BisViews Time-Card</div>
               <div className={`text-xs ${tm.subtext}`}>{monthLabel}{isCurrent ? " · Live" : ""}</div>
             </div>
           </div>
