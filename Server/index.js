@@ -156,8 +156,12 @@ function isValidObjectId(id) {
 }
 
 app.use(cors({
-  origin: ["bisviews.exploretechify.com","https://bis-views-time-card-f84t.vercel.app"],
+  origin: [
+    "https://bisviews.exploretechify.com",
+    "https://bis-views-time-card-f84t.vercel.app",
+  ],
   credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
 }));
 
 app.use(express.json());
